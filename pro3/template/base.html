@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1 id="baseh1">Page 1: Base Page</h1>
+    <p id="basepara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vero amet debitis dolore sequi aspernatur beatae rem laudantium accusantium qui. Reprehenderit doloribus aut animi tempore. Neque, quia enim amet beatae nobis itaque quod minus laudantium velit in animi tenetur hic commodi veniam laboriosam, repellat sint, rem quam ex? Voluptatibus, exercitationem porro repudiandae esse dignissimos iusto ipsum repellendus, debitis iste alias unde sapiente? Eaque illum deleniti asperiores corporis odio aliquid dignissimos praesentium soluta beatae ex, fuga, officia natus est. Repellendus earum odio officia exercitationem ipsam quos soluta asperiores explicabo voluptas nihil, nemo nam expedita ipsa quibusdam, deleniti sed dolorum eveniet vitae laboriosam dolores dolor? Ducimus doloribus consectetur eligendi natus nisi consequatur animi est impedit vitae. Aspernatur, sed nulla dolore consequatur sit rerum asperiores. Est repudiandae tempora numquam suscipit, dicta eius. Exercitationem eligendi commodi, officiis incidunt harum deleniti itaque saepe maxime sit natus molestiae ut, repudiandae consectetur non distinctio beatae, reprehenderit rerum architecto corporis excepturi necessitatibus ab amet id! Fugiat eos, quis nisi soluta placeat accusantium magnam minus itaque esse, incidunt quia, modi quibusdam dolor voluptas. Quaerat culpa qui nemo ad, similique ut quis saepe illum molestiae neque ea dolores dignissimos hic quidem, inventore expedita ex sapiente! Quis non architecto recusandae ab, modi harum est esse aliquid sit, facilis doloremque saepe omnis a exercitationem officia sequi inventore cumque aliquam at consequuntur hic accusantium! Omnis architecto quo esse ab eum! Non et cum a perferendis minus expedita dignissimos beatae, nesciunt nobis impedit. Quod natus officiis temporibus a ex? Esse itaque suscipit, optio, ducimus eligendi est molestias culpa repudiandae ipsum qui magni! Nemo id neque commodi velit aliquam perspiciatis dolor unde, labore hic itaque quam reiciendis adipisci tempora. Modi laborum reiciendis nobis maiores impedit deserunt accusantium repellendus, tempore quo quisquam necessitatibus accusamus deleniti veritatis culpa voluptate eveniet dicta magni incidunt nemo, voluptatum sit? Consequuntur saepe itaque sequi maiores neque dolore, repellendus provident veritatis dolores reprehenderit officiis debitis in eos voluptate facere aliquid at nulla ipsam maxime inventore tempora nobis enim similique architecto? Natus aspernatur exercitationem, velit explicabo ad eaque. Mollitia, nisi rerum quisquam non fuga vitae eveniet qui incidunt minima adipisci esse tenetur ipsa velit eaque beatae? Aliquid, omnis molestias.</p>
+    <div class="navcolor">
+        <a href="{% url 'home' %}">Go To Home</a>
+        {% if user.is_authenticated %}
+        <a href="{% url 'logout' %}">LOGOUT</a>
+        {% else %}
+        <a href="{% url 'signup' %}">Go To Sign_Up</a>
+        <a href="{% url 'login' %}">Go To Login</a>
+        {% endif %}
+    </div>
+    {% block body_block %}
+    {% endblock %}
+  
+</body>
+</html>

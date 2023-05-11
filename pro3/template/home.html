@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block body_block %}
+    <!-- <div class="navcolor">
+        <a href="{% url 'base' %}">Go Back To Base</a>
+        <a href="{% url 'signup' %}">Go To Sign-Up</a>
+        <a href="{% url 'login' %}">Go To Login</a>
+    </div> -->
+    <h1 id="baseh1">Page 2: Home Page</h1>
+    {% if user.is_authenticated %}
+    <h1>Hello {{user.username}}</h1>
+    <p id="basepara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure ipsam quidem rem est blanditiis sunt, error repellendus eius fugiat praesentium corrupti quo ea cupiditate hic. Consequuntur, porro. Provident dolorem in asperiores culpa explicabo saepe, ad earum ipsa perferendis accusantium praesentium accusamus. Blanditiis beatae voluptatum accusantium! Nostrum quasi assumenda deleniti consectetur vero est ab ad eos eveniet, neque quis magni animi quod facere, possimus aut id illum eum expedita sapiente! Deleniti voluptas, pariatur nam id distinctio impedit, iste eveniet eaque maxime modi sit officiis ex fuga harum enim consequatur libero nostrum ullam, blanditiis odio aliquam est provident adipisci? Delectus, perferendis. Tempore molestias eaque amet, debitis, nam ipsum alias hic magnam dolorem id culpa atque et incidunt blanditiis quo cupiditate? Dignissimos voluptas nesciunt eos. Quam?</p>
+    {% endif %}
+   
+    {% endblock %}

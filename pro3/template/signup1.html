@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block body_block %}
+<h1>Page 3: Sign_Up</h1>
+<form id="signform" method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}

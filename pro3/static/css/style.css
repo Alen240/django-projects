@@ -1,0 +1,81 @@
+body{
+    margin-top: 0%;
+    margin-left: 0%;
+    /* background: url('../images/bg2.jpeg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+h1{
+    color: brown;
+    font-size: 55px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+#baseh1{
+    color: brown;
+    text-align: center;
+    font-size: 55px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+/* p{
+    text-align: justify;
+    margin-left: 27%;
+    width: 750px;
+    margin-bottom: 30px;
+} */
+#basepara{
+    text-align: justify;
+    margin-left: 27%;
+    width: 750px;
+    margin-bottom: 30px;
+}
+/* .homepara{
+    text-align: justify;
+    margin-left: 27%;
+    width: 750px;
+} */
+.navcolor a{
+    text-decoration: none;
+    color:brown;
+   
+    font-size: 22px;
+    font-weight: 400;
+    margin-right: 22%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    color:brown;
+    font-size: 22px;
+    font-weight: 400;
+    margin-right: 25%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+  
+}    
+
+a:hover{
+    background-color: blue;
+    color: #fff;
+   
+ 
+    transition: 0.8s;
+}
+.navcolor{
+    background-color: aqua;
+    width: 100%;
+    padding: 20px;
+}
+
+/* .navcolor:hover{
+    background-color: #fff;
+    transition: 0.5s;
+} */
+
+#signform{
+    margin-left: 10%;
+}
